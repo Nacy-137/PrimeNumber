@@ -3,7 +3,7 @@
 """
 
 def Divisor(n):
-    divisor = []  #リストを初期化
+    divisor = []
     for i in range(1,n+1):
         if(len(divisor) == 2):
             break
