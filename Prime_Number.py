@@ -3,18 +3,13 @@
 """
 
 def Divisor(n):
-    i = 1
-    _n = n + 1
-    divisor = []
-    
-    for i in range(1,_n):
-        if(len(divisor) >= 2):
+    divisor = []  #リストを初期化
+    for i in range(1,n+1):
+        if(len(divisor) == 2):
             break
-        
         r = n % i
         if(r == 0):
-            divisor.append(i)
-       
+            divisor.append(i)       
     Judge(divisor)
     
 def Judge(list):        
@@ -23,6 +18,5 @@ def Judge(list):
     else:
         print(n,"は素数ではありません")
         
-
 n = int(input("整数を入力："))
 Divisor(n)
